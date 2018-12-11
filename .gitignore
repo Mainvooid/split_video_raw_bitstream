@@ -1,0 +1,8 @@
+./opencv
+./x64
+./.vs
+./split/x64
+*.mp4
+*.avi
+*.h264
+*.idx

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2048
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "split", "split\split.vcxproj", "{EDCBD31C-21F2-47A1-B427-FE24CA8A7227}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EDCBD31C-21F2-47A1-B427-FE24CA8A7227}.Debug|x64.ActiveCfg = Debug|x64
+		{EDCBD31C-21F2-47A1-B427-FE24CA8A7227}.Debug|x64.Build.0 = Debug|x64
+		{EDCBD31C-21F2-47A1-B427-FE24CA8A7227}.Debug|x86.ActiveCfg = Debug|Win32
+		{EDCBD31C-21F2-47A1-B427-FE24CA8A7227}.Debug|x86.Build.0 = Debug|Win32
+		{EDCBD31C-21F2-47A1-B427-FE24CA8A7227}.Release|x64.ActiveCfg = Release|x64
+		{EDCBD31C-21F2-47A1-B427-FE24CA8A7227}.Release|x64.Build.0 = Release|x64
+		{EDCBD31C-21F2-47A1-B427-FE24CA8A7227}.Release|x86.ActiveCfg = Release|Win32
+		{EDCBD31C-21F2-47A1-B427-FE24CA8A7227}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F494CB41-5015-463F-A5FB-3759A674E4D2}
+	EndGlobalSection
+EndGlobal

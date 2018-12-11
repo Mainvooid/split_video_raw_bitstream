@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+
+  <PropertyGroup>
+    <!-- 指定第三方依赖库目录 -->
+    <OpenCVPath>..\opencv</OpenCVPath>
+    <X264Path>..\x264</X264Path>
+
+    <!-- 指定include目录 -->
+    <IncludePath>$(OpenCVPath)\include;$(OpenCVPath)\include\opencv2;$(X264Path)\include;$(IncludePath)</IncludePath>
+
+    <!-- 指定lib目录 -->
+    <LibraryPath Condition="'$(Platform)'=='Win32'">$(OpenCVPath)\x86\vc15\lib;$(X264Path)\lib;$(LibraryPath)</LibraryPath>
+    <LibraryPath Condition="'$(Platform)'=='X64'">$(OpenCVPath)\x64\vc15\lib;$(X264Path)\lib;$(LibraryPath)</LibraryPath>
+    
+    <!-- 让系统PATH临时包含指定的dll目录 -->
+		<LocalDebuggerEnvironment Condition="'$(Platform)'=='Win32'">PATH=$(X264Path)\bin;%PATH%;$(OpenCVPath)\x86\vc15\bin</LocalDebuggerEnvironment> 
+		<LocalDebuggerEnvironment Condition="'$(Platform)'=='X64'">PATH=$(X264Path)\bin;%PATH%;$(OpenCVPath)\x64\vc15\bin</LocalDebuggerEnvironment>
+  </PropertyGroup>
+
+  <!-- 附加依赖项 -->
+  <ItemDefinitionGroup >
+    <Link Condition=" '$(Configuration)' == 'Debug' ">
+      <AdditionalDependencies>opencv_world400d.lib;opencv_img_hash400d.lib;libx264-157.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+     <Link Condition=" '$(Configuration)' == 'Release' ">
+      <AdditionalDependencies>opencv_world400.lib;opencv_img_hash400.lib;libx264-157.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+
+  <ItemGroup />
+</Project>
