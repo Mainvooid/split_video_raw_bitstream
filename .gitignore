@@ -1,7 +1,7 @@
-./opencv
-./x64
-./.vs
-./split/x64
+/opencv
+/x64
+/.vs
+/split/x64
 *.mp4
 *.avi
 *.h264
