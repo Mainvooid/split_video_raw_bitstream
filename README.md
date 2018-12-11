@@ -28,7 +28,7 @@ ffmpeg支持的各种格式的视频.
 │      └─vc15
 │          ├─bin
 │          └─lib
-├─split             主要源码目录
+├─src             主要源码目录
 ├─x264              x264目录
 │  ├─bin
 │  ├─include
